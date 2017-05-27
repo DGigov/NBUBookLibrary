@@ -56,8 +56,8 @@ namespace NbuBookLibrary
             //   consumerSecret: "");
 
             //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            //   appId: "720138061480033",
+            //   appSecret: "418d5eac2a09c5d01a1fddd042896cec");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{

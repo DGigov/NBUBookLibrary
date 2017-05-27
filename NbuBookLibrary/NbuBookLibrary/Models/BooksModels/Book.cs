@@ -7,10 +7,12 @@ namespace NbuBookLibrary.Models.BooksModels
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Полето {0} е задължително")]
+        [Display(Name = "Заглавие")]
         public string Title { get; set; }
 
         [Required]
+        [Display(Name = "Автор")]
         public int AuthorId { get; set; }
 
         [StringLength(500)]
