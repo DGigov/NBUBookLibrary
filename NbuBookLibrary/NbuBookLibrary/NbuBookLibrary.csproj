@@ -167,6 +167,11 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="BooksMigrations\201705270718376_initBooks.cs" />
+    <Compile Include="BooksMigrations\201705270718376_initBooks.Designer.cs">
+      <DependentUpon>201705270718376_initBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BooksMigrations\Configuration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -256,6 +261,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BooksMigrations\201705270718376_initBooks.resx">
+      <DependentUpon>201705270718376_initBooks.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IdentityMigrations\201705270625525_initDb.resx">
       <DependentUpon>201705270625525_initDb.cs</DependentUpon>
     </EmbeddedResource>
