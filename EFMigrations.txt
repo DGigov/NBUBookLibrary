@@ -1,0 +1,19 @@
+Enable Migrations
+--------------------------
+enable-migrations -ContextTypeName context -MigrationsDirectory migrationsFolder
+
+add-migration -ConfigurationTypeName configuration migrationName
+
+update-database -ConfigurationTypeName configuration
+
+Rollback Migrations
+--------------------------
+Get-Migrations
+
+Update-Database -TargetMigration:migrationName
+
+Rollback all Migrations
+--------------------------
+Update-Database -TargetMigration:$InitialDatabase
+
+Update-Database -TargetMigration:0
