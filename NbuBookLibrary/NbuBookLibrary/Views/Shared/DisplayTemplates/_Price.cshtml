@@ -1,0 +1,10 @@
+﻿@model decimal
+@using System.Globalization
+
+<dt>
+    @Html.DisplayNameFor(model => model)
+</dt>
+
+<dd>
+    @Model @CultureInfo.CurrentCulture.NumberFormat.CurrencySymbol
+</dd>

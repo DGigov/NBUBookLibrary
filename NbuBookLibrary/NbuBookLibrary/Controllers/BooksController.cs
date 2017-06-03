@@ -49,7 +49,7 @@ namespace NbuBookLibrary.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title,AuthorId,Description,Price")] Book book)
+        public ActionResult Create(Book book)
         {
             if (ModelState.IsValid)
             {
@@ -83,7 +83,7 @@ namespace NbuBookLibrary.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,AuthorId,Description,Price")] Book book)
+        public ActionResult Edit(Book book)
         {
             if (ModelState.IsValid)
             {

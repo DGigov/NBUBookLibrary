@@ -16,6 +16,8 @@ namespace NbuBookLibrary
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            ModelBinders.Binders.Add(typeof(decimal), new Binders.DecimalModelBinder());
         }
     }
 }

@@ -18,6 +18,7 @@ namespace NbuBookLibrary.Models.BooksModels
         [StringLength(500)]
         public string Description { get; set; }
 
+        [Display(Name = "Цена")]
         public decimal Price { get; set; }
 
         [ForeignKey(nameof(AuthorId))]

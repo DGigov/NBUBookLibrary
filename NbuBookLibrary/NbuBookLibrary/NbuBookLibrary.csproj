@@ -167,6 +167,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Binders\DecimalModelBinder.cs" />
     <Compile Include="BooksMigrations\201705270718376_initBooks.cs" />
     <Compile Include="BooksMigrations\201705270718376_initBooks.Designer.cs">
       <DependentUpon>201705270718376_initBooks.cs</DependentUpon>
@@ -185,6 +186,10 @@
     <Compile Include="IdentityMigrations\201705270625525_initDb.cs" />
     <Compile Include="IdentityMigrations\201705270625525_initDb.Designer.cs">
       <DependentUpon>201705270625525_initDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IdentityMigrations\201706030717366_userOccupationAdded.cs" />
+    <Compile Include="IdentityMigrations\201706030717366_userOccupationAdded.Designer.cs">
+      <DependentUpon>201706030717366_userOccupationAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="IdentityMigrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -208,6 +213,7 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.override-validator.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -260,6 +266,8 @@
     <Content Include="Views\Authors\Details.cshtml" />
     <Content Include="Views\Authors\Edit.cshtml" />
     <Content Include="Views\Authors\Index.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\_Price.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\_Price.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -278,6 +286,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IdentityMigrations\201705270625525_initDb.resx">
       <DependentUpon>201705270625525_initDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdentityMigrations\201706030717366_userOccupationAdded.resx">
+      <DependentUpon>201706030717366_userOccupationAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

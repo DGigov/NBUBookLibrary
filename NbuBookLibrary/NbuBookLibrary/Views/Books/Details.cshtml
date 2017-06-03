@@ -34,13 +34,7 @@
             @Html.DisplayFor(model => model.Description)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
+        @Html.DisplayFor(model => model.Price, "_Price")
 
     </dl>
 </div>
