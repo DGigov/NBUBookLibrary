@@ -8,11 +8,19 @@ using System.Web;
 using System.Web.Mvc;
 using NbuBookLibrary.DbContexts;
 using NbuBookLibrary.Models.BooksModels;
+using NbuBookLibrary.Contracts;
 
 namespace NbuBookLibrary.Controllers
 {
     public class BooksController : Controller
     {
+        public BooksController(IFirstService FirstService)
+        {
+            this.FirstService = FirstService;
+        }
+
+        private readonly IFirstService FirstService;
+
         private BooksDb db = new BooksDb();
 
         // GET: Books
